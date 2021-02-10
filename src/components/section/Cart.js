@@ -43,6 +43,9 @@ export class Cart extends Component {
                             </div>
                         ))
                     }
+                     <div>
+         Images from urban outfitters
+    </div>
                     <div className="total">
                         <Link to="/payment">Payment</Link>
                         <h3>Total: ${total}</h3>

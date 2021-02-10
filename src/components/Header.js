@@ -20,6 +20,7 @@ export class Header extends Component {
 
 
     render() {
+        const {total} = this.context;
         const {toggle} = this.state;
         const {cart} = this.context;
         return (
@@ -41,11 +42,19 @@ export class Header extends Component {
                             <img src={Close} alt="" width="20"/>
                         </li>
                     </ul>
+                     &nbsp;
+                     <h3>Total: ${total}</h3>
+                     &nbsp; &nbsp; &nbsp;
                     <div className="nav-cart">
                         <span>{cart.length}</span>
                         <Link to="/cart">
                             <img src={CartIcon} alt="" width="20"/>
+
                         </Link>
+                        
+                    
+                       
+                    
                     </div>
                 </nav>
             </header>
