@@ -16,7 +16,7 @@ export class Cart extends Component {
     render() {
         const {cart,increase,reduction,removeProduct,total} = this.context;
         if(cart.length === 0){
-            return <h2 style={{textAlign:"center"}}>Nothings Product</h2>
+            return <h2 style={{textAlign:"center"}}>No Product</h2>
         }else{
             return (
                 <>
@@ -43,9 +43,9 @@ export class Cart extends Component {
                             </div>
                         ))
                     }
-                     <div>
+                     
          Images from urban outfitters
-    </div>
+   
                     <div className="total">
                         <Link to="/payment">Payment</Link>
                         <h3>Total: ${total}</h3>

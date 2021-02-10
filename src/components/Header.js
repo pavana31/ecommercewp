@@ -36,25 +36,20 @@ export class Header extends Component {
                     <ul className={toggle ? "toggle" : ""}>
                         <li><Link to="/">Home</Link></li>
                         
-                        {/* <li><Link to="/about">About</Link></li> */}
+                        <li><Link to="/cart">Total: ${total}</Link></li>
                         {/* <li><Link to="/login">Login / Register</Link></li> */}
                         <li className="close" onClick={this.menuToggle}>
                             <img src={Close} alt="" width="20"/>
                         </li>
                     </ul>
-                     &nbsp;
-                     <h3>Total: ${total}</h3>
-                     &nbsp; &nbsp; &nbsp;
+                     
                     <div className="nav-cart">
                         <span>{cart.length}</span>
                         <Link to="/cart">
                             <img src={CartIcon} alt="" width="20"/>
 
                         </Link>
-                        
-                    
-                       
-                    
+                      
                     </div>
                 </nav>
             </header>

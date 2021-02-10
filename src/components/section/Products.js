@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import {DataContext} from '../Context'
 import '../css/Products.css'
-// import {UndrawAddToCart} from 'react-undraw-illustrations';
+
 import Fade from 'react-reveal/Fade';
 export class Products extends Component {
 
@@ -32,16 +32,11 @@ export class Products extends Component {
                        </div>
                    ))
                }
-               <br/>
+              
               
                </Fade>
                
-         {/* <UndrawAddToCart
-    primaryColor='#6c68fb'
-    height= '150px'
-    alignItem='right'
-    /> */}
-  
+        
     
      
         
